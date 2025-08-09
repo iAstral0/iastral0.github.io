@@ -302,11 +302,13 @@ main {
     border: 2px solid #FE7743;
     border-radius: 12px;
     width: 320px;
+    height: 420px;
     margin: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: stretch;
     overflow: hidden;
     text-decoration: none;
     transition: box-shadow 0.2s, border-color 0.2s;
@@ -320,6 +322,7 @@ main {
 .project-image {
     width: 100%;
     height: 180px;
+    flex: 0 0 180px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -331,6 +334,10 @@ main {
     background: #FE7743;
     color: #fff;
     width: 100%;
+    flex: 1 1 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     text-align: left;
@@ -340,11 +347,13 @@ main {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .project-desc {
     font-size: 1rem;
     margin-bottom: 0;
+    margin-left: 10px;
 }
 
 .contact-form {
